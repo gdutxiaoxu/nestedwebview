@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ASMIdeaPluginConfiguration">
+    <asm skipDebug="false" skipFrames="false" skipCode="false" expandFrames="false" />
+    <groovy codeStyle="LEGACY" />
+  </component>
+  <component name="ASMSmaliIdeaPluginConfiguration">
+    <asm skipDebug="true" skipFrames="true" skipCode="false" expandFrames="false" />
+    <groovy codeStyle="LEGACY" />
+  </component>
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/githubRep/AnchorTask/app/src/main/res/layout/activity_async.xml" value="0.5536458333333333" />
+        <entry key="..\:/githubRep/AnchorTask/app/src/main/res/layout/activity_main.xml" value="0.3302083333333333" />
+        <entry key="..\:/githubRep/AnchorTask/app/src/main/res/layout/fragment_asny.xml" value="0.3302083333333333" />
+        <entry key="..\:/githubRep/NestedWebView/app/src/main/res/layout/activity_main3.xml" value="0.1" />
+        <entry key="..\:/githubRep/NestedWebView/app/src/main/res/layout/activity_simple_web2.xml" value="0.13988095238095238" />
+        <entry key="..\:/githubRep/NestedWebView/app/src/main/res/layout/activity_x5_web.xml" value="0.1" />
+        <entry key="..\:/githubRep/NestedWebView/app/src/main/res/layout/fragment_da_shen_x5_web.xml" value="0.1" />
+        <entry key="..\:/githubRep/NestedWebView/app/src/main/res/layout/fragment_x5_web.xml" value="0.1" />
+        <entry key="..\:/githubRep/NestedWebView/app/src/main/res/layout/simple_web.xml" value="0.13988095238095238" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
