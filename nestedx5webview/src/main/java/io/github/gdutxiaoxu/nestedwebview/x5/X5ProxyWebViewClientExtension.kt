@@ -6,10 +6,15 @@ import android.view.View
 import com.tencent.smtt.export.external.extension.proxy.ProxyWebViewClientExtension
 import com.tencent.smtt.sdk.WebViewCallbackClient
 
-class X5ProxyWebViewClientExtension(var mCallbackClient: WebViewCallbackClient) : ProxyWebViewClientExtension() {
+/**
+ *  博客地址： https://blog.csdn.net/gdutxiaoxu
+ *  公众号： 徐公
+ */
+class X5ProxyWebViewClientExtension(var mCallbackClient: WebViewCallbackClient) :
+    ProxyWebViewClientExtension() {
 
 
-    private  final val TAG = "X5_ProxyWebViewClientExt"
+    private val TAG = "X5_ProxyWebViewClientExt"
 
     override fun invalidate() {}
     override fun onReceivedViewSource(data: String) {}
@@ -46,7 +51,7 @@ class X5ProxyWebViewClientExtension(var mCallbackClient: WebViewCallbackClient) 
 
     // 5
     override fun onScrollChanged(l: Int, t: Int, oldl: Int, oldt: Int, view: View) {
-        Log.i(TAG, "onScrollChanged: ")
+
         mCallbackClient.onScrollChanged(l, t, oldl, oldt, view)
     }
 
@@ -55,8 +60,7 @@ class X5ProxyWebViewClientExtension(var mCallbackClient: WebViewCallbackClient) 
         scrollX: Int, scrollY: Int, clampedX: Boolean,
         clampedY: Boolean, view: View
     ) {
-        Log.i(TAG, "onOverScrolled: ")
-
+        mCallbackClient.onOverScrolled(scrollX, scrollX, clampedX, clampedY, view)
     }
 
     // 7

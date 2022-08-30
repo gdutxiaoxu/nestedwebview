@@ -20,7 +20,10 @@ import androidx.core.view.NestedScrollingChild3;
 import androidx.core.view.NestedScrollingChildHelper;
 import androidx.core.view.ViewCompat;
 
-
+/**
+ *  博客地址： https://blog.csdn.net/gdutxiaoxu
+ *  公众号： 徐公
+ */
 public class NestedWebView extends WebView implements NestedScrollingChild3 {
 
     private static final String TAG = "NestedWebView";

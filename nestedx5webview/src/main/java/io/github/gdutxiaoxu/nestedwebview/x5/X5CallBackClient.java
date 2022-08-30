@@ -17,7 +17,8 @@ import com.tencent.smtt.sdk.WebView;
 import com.tencent.smtt.sdk.WebViewCallbackClient;
 
 /**
- * 解决 X5 WebView  的 嵌套滑动
+ *  博客地址： https://blog.csdn.net/gdutxiaoxu
+ *  公众号： 徐公
  */
 public class X5CallBackClient implements NestedScrollingChild3, WebViewCallbackClient {
 
@@ -352,7 +353,6 @@ public class X5CallBackClient implements NestedScrollingChild3, WebViewCallbackC
 
     @Override
     public boolean onTouchEvent(MotionEvent ev, View view) {
-        Log.i(TAG, "onTouchEvent: ev" + ev);
         initVelocityTrackerIfNotExists();
 
         MotionEvent vtev = MotionEvent.obtain(ev);
@@ -483,7 +483,6 @@ public class X5CallBackClient implements NestedScrollingChild3, WebViewCallbackC
 
     @Override
     public boolean overScrollBy(int i, int i1, int i2, int i3, int i4, int i5, int i6, int i7, boolean b, View view) {
-        Log.i(TAG, "overScrollBy: ");
         return overScrollByCompat(i, i1, i2, i3, i4, i5, i6, i7, b);
     }
 
@@ -499,7 +498,6 @@ public class X5CallBackClient implements NestedScrollingChild3, WebViewCallbackC
 
     @Override
     public void onOverScrolled(int scrollX, int scrollY, boolean clampedX, boolean clampedY, View view) {
-        Log.i(TAG, "onOverScrolled: ");
         webView.super_onOverScrolled(scrollX, scrollY, clampedX, clampedY);
     }
 
