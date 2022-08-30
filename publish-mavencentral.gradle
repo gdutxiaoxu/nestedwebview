@@ -65,10 +65,10 @@ publishing {
                 // Version control info, if you're using GitHub, follow the format as seen here
                 scm {
                     //修改成你的Git地址：
-                    connection = 'scm:git:github.com/gdutxiaoxu/AnchorTask.git'
-                    developerConnection = 'scm:git:ssh://github.com/gdutxiaoxu/AnchorTask.git'
+                    connection = 'scm:git:git@github.com:gdutxiaoxu/nestedwebview.git'
+                    developerConnection = 'scm:git:ssh://git@github.com:gdutxiaoxu/nestedwebview.git'
                     //分支地址：
-                    url = 'https://github.com/gdutxiaoxu/AnchorTask/tree/master'
+                    url = 'https://github.com/gdutxiaoxu/nestedwebview/tree/master'
                 }
                 // A slightly hacky fix so that your POM will include any transitive dependencies
                 // that your library builds upon
@@ -100,8 +100,8 @@ publishing {
             println("ossrhUsername is $ossrhUsername,ossrhPassword is $ossrhPassword")
             // The username and password we've fetched earlier
             credentials {
-                username "junxu"
-                password "370851417XJ@x"
+                username "$ossrhUsername"
+                password "$ossrhPassword"
             }
 
 

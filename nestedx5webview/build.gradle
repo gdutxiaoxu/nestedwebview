@@ -2,7 +2,6 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'maven'
-apply plugin: "com.netease.cc.publish"
 
 
 android {
@@ -41,12 +40,11 @@ dependencies {
 }
 
 
-publishPlugin {
-    groupId = "io.github.gdutxiaoxu"
-    // name，没有配置的话，默认是 libraryName
-    artifactId = "nestedx5webview"
-    version = "0.2"
-    withDependencies
+ext {
+    PUBLISH_GROUP_ID = "io.github.gdutxiaoxu"        //项目包名
+    PUBLISH_ARTIFACT_ID = 'nestedx5webview'            //项目名
+    PUBLISH_VERSION = "0.21"            //版本号
 }
+apply from: "${rootProject.rootDir}/publish-mavencentral.gradle"
 
 

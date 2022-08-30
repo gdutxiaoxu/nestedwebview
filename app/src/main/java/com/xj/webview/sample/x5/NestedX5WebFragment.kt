@@ -48,7 +48,7 @@ class NestedX5WebFragment : Fragment() {
             url = it.getString(ARG_URL)
             param2 = it.getString(ARG_PARAM2)
         }
-        url = url ?: "https://ds.163.com/"
+        url = url ?: "https://juejin.cn/user/2207475076966584/posts"
     }
 
 

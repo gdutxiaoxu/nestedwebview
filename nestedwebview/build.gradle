@@ -42,7 +42,7 @@ dependencies {
 ext {
     PUBLISH_GROUP_ID = "io.github.gdutxiaoxu"        //项目包名
     PUBLISH_ARTIFACT_ID = 'nestedwebview'            //项目名
-    PUBLISH_VERSION = "0.2"            //版本号
+    PUBLISH_VERSION = "0.21"            //版本号
 }
 apply from: "${rootProject.rootDir}/publish-mavencentral.gradle"
 
