@@ -34,7 +34,7 @@ class X5WebViewPagerActivity : AppCompatActivity() {
         val arrayList = ArrayList<FragmentTab>()
         val fragment =
             NestedX5WebFragment.newInstance("https://juejin.cn/user/2207475076966584/posts")
-        fragment.iNestedScroll = HeaderNestedScroll(mTabLayout, mViewPager)
+//        fragment.iNestedScroll = HeaderNestedScroll(mTabLayout, mViewPager)
         arrayList.add(
             FragmentTab(
                 "主页",
